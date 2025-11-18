@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-institutes" ontologyIRI="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-institutes" versionIRI="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-institutes">
+   
+    
+   <Prefix name="" IRI="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-institutes/"/>
+   
+    
+   <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+   
+    
+   <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+   
+    
+   <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+   
+    
+   <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+   
+    
+   <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+   
+    
+   <Import>https://metaclip.org/datasource/0.30/datasource.owl</Import>
+   
+    
+   <Declaration>
+      
+        
+      <NamedIndividual IRI="#AdMU"/>
+      
+    
+   </Declaration>
+   
+    
+   <ClassAssertion>
+      
+        
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      
+        
+      <NamedIndividual IRI="#AdMU"/>
+      
+    
+   </ClassAssertion>
+   
+    
+   <AnnotationAssertion>
+      
+        
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      
+        
+      <IRI>#AdMU</IRI>
+      
+        
+      <Literal>Ateneo de Manila University</Literal>
+      
+    
+   </AnnotationAssertion>
+   
+
+   <Declaration>
+      <NamedIndividual IRI="#AWI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#AWI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#AWI</IRI>
+      <Literal>Alfred Wegener Institute</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#BMKG"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#BMKG"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#BMKG</IRI>
+      <Literal>Agency for Meteorology, Climatology and Geophysics</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#BOUN"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#BOUN"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#BOUN</IRI>
+      <Literal>Bogazici University</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#BTU"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#BTU"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#BTU</IRI>
+      <Literal>Brandenburgische Technische Universität</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CCCma"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CCCma"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CCCma</IRI>
+      <Literal>Canadian Centre for Climate Modelling and Analysis</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CLMcom"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CLMcom"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CLMcom</IRI>
+      <Literal>Climate Limited-area Modelling Community</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CMCC"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CMCC"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CMCC</IRI>
+      <Literal>Fondazione Centro Euro-Mediterraneo sui Cambiamenti Climatici</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ETH"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ETH"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ETH</IRI>
+      <Literal>ETH Zurich</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#GUF"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#GUF"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#GUF</IRI>
+      <Literal>Goethe University Frankfurt</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#HZG"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#HZG"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#HZG</IRI>
+      <Literal>Helmholtz-Zentrum Hereon</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#KIT"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#KIT"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#KIT</IRI>
+      <Literal>Karlsruhe Institute of Technology</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CNRM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CNRM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CNRM</IRI>
+      <Literal>Centre National de Recherches Météorologiques</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CRC"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CRC"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CRC</IRI>
+      <Literal>Centre de Recherches de Climatologie</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CSIRO"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CSIRO"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CSIRO</IRI>
+      <Literal>Commonwealth Scientific and Industrial Research Organisation</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#CYI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#CYI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#CYI</IRI>
+      <Literal>The Cyprus Institute</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#DMI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#DMI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#DMI</IRI>
+      <Literal>Danish Meteorological Institute</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#DWD"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#DWD"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#DWD</IRI>
+      <Literal>Deutscher Wetterdienst</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ELU"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ELU"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ELU</IRI>
+      <Literal>ELTE Eötvös Loránd University</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ENEA"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ENEA"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ENEA</IRI>
+      <Literal>Italian National Agency for New Technologies, Energy and Sustainable Economic Development</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#GERICS"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#GERICS"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#GERICS</IRI>
+      <Literal>Climate Service Center Germany</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#GERICS-AWI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#GERICS-AWI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#GERICS-AWI</IRI>
+      <Literal>Cooperation GERICS–AWI</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#HUST"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#HUST"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#HUST</IRI>
+      <Literal>Hanoi University of Science and Technology</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ICTP"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ICTP"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ICTP</IRI>
+      <Literal>Abdus Salam International Centre for Theoretical Physics</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#IITM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#IITM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#IITM</IRI>
+      <Literal>Centre for Climate Change Research, Indian Institute of Tropical Meteorology</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#INPE"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#INPE"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#INPE</IRI>
+      <Literal>National Institute for Space Research</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#LMD"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#LMD"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#LMD</IRI>
+      <Literal>Institut Pierre-Simon Laplace</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ISU"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ISU"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ISU</IRI>
+      <Literal>Iowa State University</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ITU"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ITU"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ITU</IRI>
+      <Literal>Istanbul Technical University</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#KNMI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#KNMI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#KNMI</IRI>
+      <Literal>Royal Netherlands Meteorological Institute</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#IPSL"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#IPSL"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#IPSL</IRI>
+      <Literal>IPSL Dynamic Meteorology Laboratory</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#MO"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#MO"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#MO</IRI>
+      <Literal>Manila Observatory</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#MGO"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#MGO"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#MGO</IRI>
+      <Literal>Main Geophysical Observatory</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#MOHC"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#MOHC"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#MOHC</IRI>
+      <Literal>Met Office Hadley Centre</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#MPIM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#MPIM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#MPIM</IRI>
+      <Literal>Max Planck Institute for Meteorology</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#NCAR"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#NCAR"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#NCAR</IRI>
+      <Literal>National Center for Atmospheric Research</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#NUIM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#NUIM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#NUIM</IRI>
+      <Literal>National University of Ireland Maynooth</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#OURANOS"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#OURANOS"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#OURANOS</IRI>
+      <Literal>Ouranos</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ORNL"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ORNL"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ORNL</IRI>
+      <Literal>Oak Ridge National Laboratory</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#RMIB-UGent"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#RMIB-UGent"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#RMIB-UGent</IRI>
+      <Literal>Royal Meteorological Institute of Belgium &amp; Ghent University</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#RU-CORE"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#RU-CORE"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#RU-CORE</IRI>
+      <Literal>Ramkhamhaeng University Center of Regional Climate Change and Renewable Energy</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#SMHI"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#SMHI"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#SMHI</IRI>
+      <Literal>Swedish Meteorological and Hydrological Institute</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UA"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UA"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UA</IRI>
+      <Literal>University of Arizona</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UCAN"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UCAN"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UCAN</IRI>
+      <Literal>Meteorology Group, Universidad de Cantabria-CSIC</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UHOH"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UHOH"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UHOH</IRI>
+      <Literal>University of Hohenheim</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#ULg"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#ULg"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#ULg</IRI>
+      <Literal>University of Liège</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UNIBELGRADE"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UNIBELGRADE"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UNIBELGRADE</IRI>
+      <Literal>University of Belgrade</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UKM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UKM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UKM</IRI>
+      <Literal>Universiti Kebangsaan Malaysia</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UNSW"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UNSW"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UNSW</IRI>
+      <Literal>University of New South Wales</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#UQAM"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#UQAM"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#UQAM</IRI>
+      <Literal>Université du Québec à Montréal</Literal>
+   </AnnotationAssertion>
+   <Declaration>
+      <NamedIndividual IRI="#VNU-HUS"/>
+   </Declaration>
+   <ClassAssertion>
+      <Class IRI="https://metaclip.org/datasource/datasource.owl#ModellingCenter"/>
+      <NamedIndividual IRI="#VNU-HUS"/>
+   </ClassAssertion>
+   <AnnotationAssertion>
+      <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+      <IRI>#VNU-HUS</IRI>
+      <Literal>Hanoi University of Science, Vietnam National University</Literal>
+   </AnnotationAssertion>
+</Ontology>
