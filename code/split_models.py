@@ -5,8 +5,13 @@ split_models.py
 Reads `code/cordex_filtered.csv`, adds separate columns for institution and model name
 for GCM and RCM using reasonable heuristics, and writes a new CSV `cordex_filtered_with_split.csv`.
 
+<<<<<<< HEAD
 Also creates a `dataset_id` column with format: DOMAIN-RESOLUTION_GCM_EXPERIMENT_ENSEMBLE_RCM
 example: AFR-44_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4
+=======
+Also creates a `dataset_id` column with format: DOMAIN-GCMmodel-ensemble-RCMmodel-experiment
+example: africa-gfdl_esm2g-r0i0p0-remo2009-historical
+>>>>>>> ae4cf28 (code and vocab changes)
 
 Does not modify the original file: creates a backup and a new file.
 """
@@ -20,6 +25,7 @@ IN_CSV = os.path.join(ROOT, 'code', 'cordex_filtered.csv')
 OUT_CSV = os.path.join(ROOT, 'code', 'cordex_filtered_with_split.csv')
 BAK_CSV = IN_CSV + '.bak'
 
+<<<<<<< HEAD
 # Domain mapping to standard CORDEX codes (base names without resolution)
 DOMAIN_BASE_MAPPING = {
     'africa': 'AFR',
@@ -58,6 +64,8 @@ def format_domain(domain, horizontal_resolution=None):
     resolution = extract_resolution_from_horizontal_resolution(horizontal_resolution)
     return f"{base_code}-{resolution}"
 
+=======
+>>>>>>> ae4cf28 (code and vocab changes)
 
 def tokens(s):
     return s.split('_') if s and '_' in s else [s] if s else []
@@ -101,6 +109,7 @@ def clean_token(s):
     return s.lower()
 
 
+<<<<<<< HEAD
 def sanitize_preserve_case(s):
     """Sanitize preserving case and hyphens for GCM and RCM tokens"""
     if not s:
@@ -123,6 +132,13 @@ def make_dataset_id(domain, gcm_model_name, ensemble_member, rcm_model_name, exp
 
     parts = [p for p in [domain_code, gcm_name, experiment_clean, ensemble_clean, rcm_name] if p]
     return '_'.join(parts)
+=======
+def make_dataset_id(domain, gcm_model_name, ensemble_member, rcm_model_name, experiment):
+    parts = [domain, gcm_model_name, ensemble_member, rcm_model_name, experiment]
+    parts = [clean_token(p) for p in parts if p is not None]
+    # join with hyphens to match existing OWX example
+    return '-'.join(parts)
+>>>>>>> ae4cf28 (code and vocab changes)
 
 
 def process():
@@ -154,7 +170,10 @@ def process():
                 domain = row.get('domain', '') or ''
                 ensemble = row.get('ensemble_member', '') or ''
                 experiment = row.get('experiment', '') or ''
+<<<<<<< HEAD
                 horizontal_resolution = row.get('horizontal_resolution', '') or ''
+=======
+>>>>>>> ae4cf28 (code and vocab changes)
 
                 g_tokens = tokens(gcm)
                 r_tokens = tokens(rcm)
@@ -167,9 +186,13 @@ def process():
                 row['rcm_institution'] = r_inst
                 row['rcm_model_name'] = r_model
 
+<<<<<<< HEAD
                 horiz = row.get('horizontal_resolution', '') or ''
 
                 dataset_id = make_dataset_id(domain, g_model, ensemble, r_model, experiment, horizontal_resolution=horiz)
+=======
+                dataset_id = make_dataset_id(domain, g_model, ensemble, r_model, experiment)
+>>>>>>> ae4cf28 (code and vocab changes)
                 row['dataset_id'] = dataset_id
                 unique_ids.add(dataset_id)
 

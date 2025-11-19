@@ -232,6 +232,7 @@ def last_tokens(s, n=2):
     return '_'.join(parts[-n:])
 
 def regenerate_dataset_id(row):
+<<<<<<< HEAD
     """Regenerates dataset_id with normalized names.
 
     Format: DOMAIN-RESOLUTION_GCM_EXPERIMENT_ENSEMBLE_RCM
@@ -268,6 +269,24 @@ def regenerate_dataset_id(row):
 
     parts = [p for p in [domain_norm, gcm_name, experiment, ensemble, rcm_name] if p]
     return '_'.join(parts)
+=======
+    """Regenerates dataset_id with normalized names"""
+    domain = row['domain']
+    gcm = row['gcm_model_name'] 
+    ensemble = row['ensemble_member']
+    rcm = row['rcm_model_name']
+    experiment = row['experiment']
+    
+    # Clean and extract relevant parts
+    domain_clean = clean_token(domain)
+    gcm_name = last_tokens(clean_token(gcm), 2)
+    ensemble_clean = clean_token(ensemble)
+    rcm_name = last_tokens(clean_token(rcm), 1)
+    exp_clean = clean_token(experiment)
+    
+    parts = [p for p in [domain_clean, gcm_name, ensemble_clean, rcm_name, exp_clean] if p]
+    return '-'.join(parts)
+>>>>>>> ae4cf28 (code and vocab changes)
 
 # =============================================================================
 # MAIN NORMALIZATION FUNCTION
@@ -392,6 +411,7 @@ def ensure_csv():
         raise FileNotFoundError('No input CSV found.')
 
 def collect_dataset_ids(csv_path):
+<<<<<<< HEAD
     """Extracts unique dataset_ids from CSV. If dataset_id column is missing,
     regenerate dataset_ids using normalization mappings.
 
@@ -403,6 +423,10 @@ def collect_dataset_ids(csv_path):
     rcm_mapping = load_rcm_mapping()
     gcm_mapping = load_gcm_mapping()
 
+=======
+    """Extracts unique dataset_ids from CSV"""
+    ids = set()
+>>>>>>> ae4cf28 (code and vocab changes)
     with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         if 'dataset_id' in (reader.fieldnames or []):
@@ -414,6 +438,7 @@ def collect_dataset_ids(csv_path):
 
     # If dataset_id is not present, calculate on the fly
     print('dataset_id not present; calculating from existing columns...')
+<<<<<<< HEAD
 
     with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -456,6 +481,25 @@ def collect_dataset_ids(csv_path):
                 'ensemble_member': r.get('ensemble_member',''),
                 'rcm_model_name': rcm_canon,
                 'experiment': r.get('experiment','')
+=======
+    
+    with open(csv_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for r in reader:
+            domain = r.get('domain','')
+            g = r.get('gcm_model','')
+            rcm = r.get('rcm_model','')
+            ens = r.get('ensemble_member','')
+            exp = r.get('experiment','')
+            
+            # Use the same ID generation logic
+            row_mock = {
+                'domain': domain,
+                'gcm_model_name': g,
+                'ensemble_member': ens,
+                'rcm_model_name': rcm,
+                'experiment': exp
+>>>>>>> ae4cf28 (code and vocab changes)
             }
             did = regenerate_dataset_id(row_mock)
             if did:
