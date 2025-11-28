@@ -216,12 +216,24 @@ def normalize_rcm(rcm_model, rcm_mapping):
             
     return rcm_model
 
-def clean_token(s):
-    """Cleans a token for use in dataset_id"""
+def clean_token(s, preserve_hyphen=False):
+    """Cleans a token for use in dataset_id.
+
+    Args:
+        s: input string
+        preserve_hyphen: if True, keep hyphens (used for domain like 'AFR-44')
+    """
     if not s:
         return ''
     s = str(s).strip().replace(' ', '_')
-    s = re.sub(r'[^A-Za-z0-9_\-]', '', s)
+    if preserve_hyphen:
+        # Allow letters, numbers, underscore and hyphen
+        s = re.sub(r'[^A-Za-z0-9_\-]', '', s)
+    else:
+        # Normalize hyphens to underscores so separator is consistent
+        s = s.replace('-', '_')
+        # Allow only alphanumeric and underscore
+        s = re.sub(r'[^A-Za-z0-9_]', '', s)
     return s.lower()
 
 def last_tokens(s, n=2):
@@ -239,15 +251,44 @@ def regenerate_dataset_id(row):
     rcm = row['rcm_model_name']
     experiment = row['experiment']
     
-    # Clean and extract relevant parts
-    domain_clean = clean_token(domain)
-    gcm_name = last_tokens(clean_token(gcm), 2)
-    ensemble_clean = clean_token(ensemble)
-    rcm_name = last_tokens(clean_token(rcm), 1)
-    exp_clean = clean_token(experiment)
-    
-    parts = [p for p in [domain_clean, gcm_name, ensemble_clean, rcm_name, exp_clean] if p]
-    return '-'.join(parts)
+    # Format each facet according to requested rules:
+    # - domain: already normalized by normalize_domain (e.g., 'AFR-44') -> keep as-is
+    domain_clean = domain
+
+    # - GCM: use canonical name from mapping (row['gcm_model_name']),
+    #   replace any internal underscores with hyphens so facets don't contain '_'
+    gcm_token = (gcm or '').strip()
+    if gcm_token:
+        gcm_token = re.sub(r'\s+', '', gcm_token)
+        gcm_token = gcm_token.replace('_', '-')
+
+    # - Experiment: compact rcp variants to 'rcpXY' (e.g., rcp_8_5 -> rcp85),
+    #   otherwise clean to alphanum lowercase (e.g., 'historical')
+    exp_token = (experiment or '').strip().lower()
+    if exp_token:
+        # match rcp patterns like rcp_8_5, rcp-8-5, rcp85
+        m = re.match(r'rcp[_\-]?(\d{1,2})[_\-]?(\d{1,2})', exp_token)
+        if m:
+            exp_token = f"rcp{m.group(1)}{m.group(2)}"
+        else:
+            # remove non-alphanumeric
+            exp_token = re.sub(r'[^a-z0-9]', '', exp_token)
+
+    # - Ensemble: keep as-is but clean non-alphanumeric and lowercase
+    ens_token = (ensemble or '').strip().lower()
+    if ens_token:
+        ens_token = re.sub(r'[^a-z0-9]', '', ens_token)
+
+    # - RCM: use canonical name from mapping (row['rcm_model_name']),
+    #   replace internal underscores with hyphens
+    rcm_token = (rcm or '').strip()
+    if rcm_token:
+        rcm_token = re.sub(r'\s+', '', rcm_token)
+        rcm_token = rcm_token.replace('_', '-')
+
+    parts = [p for p in [domain_clean, gcm_token, exp_token, ens_token, rcm_token] if p]
+    # Use underscore as separator between dataset facets
+    return '_'.join(parts)
 
 # =============================================================================
 # MAIN NORMALIZATION FUNCTION
