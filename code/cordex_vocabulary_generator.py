@@ -76,7 +76,12 @@ DOMAIN_BASE_MAPPING = {
 # =============================================================================
 
 def load_rcm_mapping():
-    """Loads RCM mapping from CORDEX_RCMs_ToU.txt"""
+    """Loads RCM mapping from CORDEX_RCMs_ToU.txt
+    
+    Returns dict with:
+        - key: lowercase normalized variant
+        - value: tuple (full_rcm_id, institute_id)
+    """
     rcm_mapping = {}
     if not RCMS_FILE.exists():
         print(f"Warning: {RCMS_FILE} not found")
@@ -91,15 +96,16 @@ def load_rcm_mapping():
             parts = line.split()
             if len(parts) >= 2:
                 rcm_id = parts[0]
-                # Create flexible mappings
+                institute_id = parts[1]
+                # Create flexible mappings - store tuple (full_id, institute)
                 key = rcm_id.lower().replace('-', '_')
-                rcm_mapping[key] = rcm_id
+                rcm_mapping[key] = (rcm_id, institute_id)
                 
                 # Additional mappings for common variants
                 if '_' in key:
                     base_key = key.split('_')[0]
                     if base_key not in rcm_mapping:
-                        rcm_mapping[base_key] = rcm_id
+                        rcm_mapping[base_key] = (rcm_id, institute_id)
                 
     print(f"  Loaded {len(rcm_mapping)} RCM mappings")
     return rcm_mapping
@@ -199,9 +205,12 @@ def normalize_gcm(gcm_model, gcm_mapping):
     return gcm_model
 
 def normalize_rcm(rcm_model, rcm_mapping):
-    """Normalizes RCM name using reference mapping"""
+    """Normalizes RCM name using reference mapping
+    
+    Returns tuple (full_rcm_id, institute_id) or (original, None) if not found
+    """
     if not rcm_model:
-        return rcm_model
+        return (rcm_model, None)
         
     rcm_key = rcm_model.lower().replace('-', '_').strip()
     
@@ -214,7 +223,7 @@ def normalize_rcm(rcm_model, rcm_mapping):
         if rcm_key in key or key in rcm_key:
             return value
             
-    return rcm_model
+    return (rcm_model, None)
 
 def clean_token(s, preserve_hyphen=False):
     """Cleans a token for use in dataset_id.
@@ -255,10 +264,16 @@ def regenerate_dataset_id(row):
     # - domain: already normalized by normalize_domain (e.g., 'AFR-44') -> keep as-is
     domain_clean = domain
 
-    # - GCM: use canonical name from mapping (row['gcm_model_name']),
-    #   replace any internal underscores with hyphens so facets don't contain '_'
+    # - GCM: extract model part only (after institution prefix)
+    #   Format in mapping is "Institution-ModelName", we want only "ModelName"
     gcm_token = (gcm or '').strip()
     if gcm_token:
+        # Split on first hyphen to separate institution from model
+        if '-' in gcm_token:
+            parts = gcm_token.split('-', 1)
+            if len(parts) == 2:
+                gcm_token = parts[1]  # Keep only model part
+        # Replace any remaining internal underscores with hyphens
         gcm_token = re.sub(r'\s+', '', gcm_token)
         gcm_token = gcm_token.replace('_', '-')
 
@@ -279,9 +294,26 @@ def regenerate_dataset_id(row):
     if ens_token:
         ens_token = re.sub(r'[^a-z0-9]', '', ens_token)
 
-    # - RCM: use canonical name from mapping (row['rcm_model_name']),
-    #   replace internal underscores with hyphens
-    rcm_token = (rcm or '').strip()
+    # - RCM: extract model part only (strip institute prefix)
+    #   rcm is now a tuple (full_rcm_id, institute_id) from normalize_rcm
+    rcm_token = ''
+    if isinstance(rcm, tuple):
+        full_rcm_id, institute_id = rcm
+        if full_rcm_id and institute_id:
+            # Remove institute prefix from RCM model name
+            # Format is typically "Institute-ModelName" or "Institute1-Institute2-ModelName"
+            # Use institute_id to strip the prefix
+            rcm_token = full_rcm_id
+            # Try to remove institute prefix (case-insensitive match)
+            if rcm_token.lower().startswith(institute_id.lower() + '-'):
+                rcm_token = rcm_token[len(institute_id)+1:]
+        else:
+            rcm_token = full_rcm_id or ''
+    else:
+        # Fallback if rcm is not a tuple (shouldn't happen with updated code)
+        rcm_token = (rcm or '').strip()
+    
+    # Clean up RCM token: replace underscores with hyphens, remove spaces
     if rcm_token:
         rcm_token = re.sub(r'\s+', '', rcm_token)
         rcm_token = rcm_token.replace('_', '-')
@@ -365,15 +397,22 @@ def normalize_csv(test_mode=False):
                 
                 # Normalize RCM  
                 original_rcm = row['rcm_model_name']
-                row['rcm_model_name'] = normalize_rcm(original_rcm, rcm_mapping)
-                if row['rcm_model_name'] != original_rcm:
+                normalized_rcm_tuple = normalize_rcm(original_rcm, rcm_mapping)
+                # Extract full RCM ID from tuple for display/storage
+                normalized_rcm_id = normalized_rcm_tuple[0] if isinstance(normalized_rcm_tuple, tuple) else normalized_rcm_tuple
+                row['rcm_model_name'] = normalized_rcm_id
+                if normalized_rcm_id != original_rcm:
                     stats['rcms_normalized'] += 1
                     if test_mode:
-                        print(f"  RCM: {original_rcm} -> {row['rcm_model_name']}")
+                        print(f"  RCM: {original_rcm} -> {normalized_rcm_id}")
                         
                 # Regenerate dataset_id with normalized names
+                # Pass the full tuple to regenerate_dataset_id for RCM processing
                 old_id = row['dataset_id']
-                row['dataset_id'] = regenerate_dataset_id(row)
+                # Create a modified row dict with the tuple for regenerate_dataset_id
+                row_for_id = row.copy()
+                row_for_id['rcm_model_name'] = normalized_rcm_tuple
+                row['dataset_id'] = regenerate_dataset_id(row_for_id)
                 if test_mode:
                     print(f"  ID: {old_id} -> {row['dataset_id']}")
                 
