@@ -1,0 +1,907 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/main/CORDEX-CMIP5-models.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/main/CORDEX-CMIP5-models.owl"
+     versionIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/main/CORDEX-CMIP5-models.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/rub-n/ontologies/2025/10/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://metaclip.org/datasource/0.30/datasource.owl</Import>
+    <Declaration>
+        <NamedIndividual IRI="#CNRM-ALADIN52-v1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CNRM-ALADIN53-v1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CNRM-ALADIN63-v1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CNRM-ALADIN63-v2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RMIB-UGent-ALARO-0-v1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCAM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCAM-1704"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCAM-2008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM4-8-17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-CLM3-5-v1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM4-8-18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM4-8-19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM5-0-15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM5-0-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCLM5-0-9-NEMOMED12-3-6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COSMO-crCLIM-v1-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COSMOMED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CRCM5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCCma-CanRCM4-r2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EBU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EBU-POM2c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HIRHAM5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HadREM3-GA7-05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LMDZ4NEMOMED8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAR311"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PROTHEUS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RACMO21P"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RACMO22E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RACMO22T"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RCA4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RCSM4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#REMO2009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#REMO2015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ROM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RRCM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegCM4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegCM4-3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegCM4-4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegCM4-6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegCM4-7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF341E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF341I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF351"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF360J"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF360K"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF360L"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF361H"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF381"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WRF381P"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ucan_wrf341i"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ALADIN52"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ALADIN53"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ALADIN63"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ALARO-0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CSIRO-CCAM-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CSIRO-CCAM-1704-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CSIRO-CCAM-2008-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CCLM4-8-17-CLM3-5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#GUF-CCLM4-8-18-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CMCC-CCLM4-8-19-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CMCC-CCLM4-8-19-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-KIT-CCLM5-0-15-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-HGZ-CCLM5-0-15-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-CCLM5-0-2-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-GUF-CCLM5-0-9-NEMOMED12-3-6-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CLMcom-ETH-COSMO-crCLIM-v1-1-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CMCC-COSMOMED-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#OURANOS-CRCM5-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UQAM-CRCM5-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UQAM-CRCM5-SN-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UNIBELGRADE-EBU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UNIBELGRADE-EBU-POM2c-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#INPE-Eta-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#DMI-HIRHAM5-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#DMI-HIRHAM5-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#DMI-HIRHAM5-v3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-v2"/>
+    </ClassAssertion>
+    
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-v1"/>
+    </ClassAssertion>    
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ULg-MAR311-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ENEA-PROTHEUS-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO21P-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO21P-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO22E-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO22E-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO22T-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#KNMI-RACMO22T-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#SMHI-RCA4-SN-v1a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#SMHI-RCA4-SN-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#SMHI-RCA4-SN-v3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#SMHI-RCA4-SN-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CNRM-RCSM4-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#MPI-CSC-REMO2009-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#GERICS-REMO2015-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#GERICS-REMO2015-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#GERICS-AWI-ROM-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#MGO-RRCM-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ISU-NCAR-RegCM4-v4-4-rc8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICTP-RegCM4-3-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ELU-RegCM4-3-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-v4"/>
+    </ClassAssertion>   
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#BOUN-ITU-RegCM4-3-v5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICTP-RegCM4-3-v7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICPT-RegCM4-4-v0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#IITM-RegCM4-4-v5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICTP-RegCM4-6-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-v0"/> 
+      </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#NCAR-UA-WRF-v3-5-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#NUIM-WRF341E-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UCAN-WRF341I-v2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CYI-WRF351-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UNSW-WRF360J-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UNSW-WRF360K-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UNSW-WRF360L-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#UHOH-WRF361H-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#CRC-BGS-WRF381-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#IPSL-WRF381P-v1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
+        <NamedIndividual IRI="#IPSL-WRF381P-v2"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ALADIN52</IRI>
+        <Literal>LK: no
+UR: Urban areas are considered as rock (Daniel et al. (2019)
+
+ALADIN53 is the same as ALADIN52 except for the radiation
+scheme, which is RRTM for the LW (Mlawer et al., 1997) and
+FMR-6bands for the SW (Fouquart and Bonnel, 1980;
+Morcrette et al., 2008), for the turbulent air-sea fluxes
+(ECUME) and for the mixing length based on Lenderink’s work.
+AFR-44 simulations are not on ESGF, but are available (3 RCP
+scenarios) upon request.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ALADIN53</IRI>
+        <Literal>LK: no
+UR: Urban areas are considered as rock (Daniel et al. (2019)
+
+ALADIN53 is the same as ALADIN52 except for the radiation
+scheme, which is RRTM for the LW (Mlawer et al., 1997) and
+FMR-6bands for the SW (Fouquart and Bonnel, 1980;
+Morcrette et al., 2008), for the turbulent air-sea fluxes
+(ECUME) and for the mixing length based on Lenderink’s work.
+AFR-44 simulations are not on ESGF, but are available (3 RCP
+scenarios) upon request.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ALADIN63</IRI>
+        <Literal>LK: Flake (Moigne et al. (2016)), pronostic lake ice.
+UR: Urban areas are considered as rock (Daniel et al. (2019)
+
+ALADIN63 v1 and v2 are identical. v2 indicates that the runs
+driven by the CNRM-CM5 GCM use the corrected version of
+the CNRM-CM5 Atmospheric-LBCs contrary to ALADIN53_v1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCAM</IRI>
+        <Literal>UR: UCLEM (Lipson et al., 2018)
+
+CCAM employed two downscaling methods with
+CCAM/CCAM-1704 maintaining the change in SSTs predicted
+by the host GCM but allowed the SSTs to be bias-corrected
+and decoupled from the atmospheric forcing. CCAM-2008
+(see below) used uncorrected SSTs and included atmospheric
+forcing using a spectral nudging of air temperature, winds and
+surface pressure at length scales above 3,000 km, essentially
+replacing lateral boundary conditions with a spectral boundary
+condition. In this way CCAM-2008 is more constrained by the
+GCM ensemble, but has less freedom to reduce biases
+inherited from the GCMs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCAM-1704</IRI>
+        <Literal>UR: UCLEM (Lipson et al., 2018)
+
+CCAM employed two downscaling methods with
+CCAM/CCAM-1704 maintaining the change in SSTs predicted
+by the host GCM but allowed the SSTs to be bias-corrected
+and decoupled from the atmospheric forcing. CCAM-2008
+(see below) used uncorrected SSTs and included atmospheric
+forcing using a spectral nudging of air temperature, winds and
+surface pressure at length scales above 3,000 km, essentially
+replacing lateral boundary conditions with a spectral boundary
+condition. In this way CCAM-2008 is more constrained by the
+GCM ensemble, but has less freedom to reduce biases
+inherited from the GCMs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCAM-2008</IRI>
+        <Literal>UR: UCLEM (Lipson et al 2018)
+RI: Miller (1994)
+
+CCAM employed two downscaling methods with
+CCAM/CCAM-1704 (see above) maintaining the change in
+SSTs predicted by the host GCM but allowed the SSTs to be
+bias-corrected and decoupled from the atmospheric forcing.
+CCAM-2008 used uncorrected SSTs and included atmospheric
+forcing using a spectral nudging of air temperature, winds and
+surface pressure at length scales above 3,000 km, essentially
+replacing lateral boundary conditions with a spectral boundary
+condition. In this way CCAM-2008 is more constrained by the
+GCM ensemble, but has less freedom to reduce biases
+inherited from the GCMs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCLM4-8-17</IRI>
+        <Literal>LK: no, UR: no, RI: no
+
+Simulation carried out by KIT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCLM4-8-18</IRI>
+        <Literal>LK: no
+UR: no
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCLM5-0-15</IRI>
+        <Literal>LK: FLake (Mironov et al. 2010)
+UR: no
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCLM5-0-2</IRI>
+        <Literal>urface roughness: GLOBE (NOAA/NGDC); Global
+Land Cover 2000 Project (GLC2000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CCLM5-0-9-NEMOMED12-3-6</IRI>
+        <Literal>RI: TRIP (Total Runoff Integrating Pathways) is used as the
+interactive river component for rivers over the Mediterranean
+Basin to feed runoff at the river mouths to the Mediterranean
+Sea (NEMOMED12)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#COSMO-crCLIM-v1-1</IRI>
+        <Literal>COSMO-crCLIM is similar to CCLM. Its main characteristics
+are that it runs on GPUs and includes the soil hydrology
+scheme of Schlemmer et al (2018). Other adjustments include
+changing the upper level damping to only relax the vertical
+velocity instead of all dynamical fields (Klemp et al., 2008)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CRCM5</IRI>
+        <Literal>LK: Flake (Mironov et al., 2010)
+
+Spectral nudging on U and V, linearly between ~470 hPa and
+the top level, from 0 to 1 (relaxed over 6.67h).
+
+All UQAM-CRCM5 simulations were run without nudging,
+except for one of the ARC-44 ERA-Interim simulations named
+UQAM-CRCM5-SN. The latter used spectral nudging on U and
+V, linearly between ~850 hPa and the top level, from 0 to 1
+(relaxed over 24h).
+Compared to OURANOS-CRCM5 v1: Deeper soil, weaker
+spectral nudging but reaching lower in the atmosphere, and
+wider NAM-22 domain (20 grid points larger to the east)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CanRCM4</IRI>
+        <Literal>Full atmospheric physics package identical to that used by
+parent global model, CanAM4, used by CanESM2 for CMIP5.
+Historical + RCP8.5 large ensemble (50 members) of &apos;NAM-44&apos;
+available for large ensemble (50 members) of its parent model
+CanESM2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EBU</IRI>
+        <Literal>LK: no, UR: no, RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EBU-POM2c</IRI>
+        <Literal>LK: no, UR: no, RI: no
+Same as EBU, but coupled to POM ocean model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Eta</IRI>
+        <Literal>LK: no, UR: no, RI: no
+No orography smoothing; No internal and no lateral boundary
+relaxation nudging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HIRHAM5</IRI>
+        <Literal>The different versions v1, v2, v3, are simulation versions due
+to necessary re-runs, not different model versions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HadREM3-GA7-05</IRI>
+        <Literal>LK: no
+v2 runs are using CNRM boundary conditions from pressure
+level 3D data. This is because CNRM model level 3D data
+(used in v1 version) do not correspond to the CNRM output
+available in the CMIP5 archive. No differences in the RCM,
+only a different source of atmospheric lateral boundary
+conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LMDZ4NEMOMED8</IRI>
+        <Literal>RI: Interactive river coupling in v2. No river coupling in v1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAR311</IRI>
+        <Literal>SISVAT model: 30 snow/ice layers over the ice sheet and two
+sub-pixels (rocs and permanent ice-covered area)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PROTHEUS</IRI>
+        <Literal>RI: Fully interactive (daily coupling) using the TRIP river routine
+model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RACMO21P</IRI>
+        <Literal>LK: no, UR: no, RI: no
+Model versions:
+Simulations with RACMO21P_v2 are straight reruns of
+RACMO21P_v1 employing the same model system and
+parameter settings.
+In ANT-44 simulations, v2 is only used with
+MOHC-HadGEM2-ES forcing to fix the remapping of SST to
+the RACMO grid in the v1-simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RACMO22E</IRI>
+        <Literal>LK: no, UR: no, RI: no
+Model versions:
+Simulations with RACMO22E_v2 are straight reruns of
+RACMO22E_v1 employing the same model system and
+parameter settings.
+Meaning of v2 depends on forcing GCM:
+i) MOHC-HadGEM2-ES: remapping of GCM-SST to RACMO
+grid erroneous in v1, corrected in v2
+ii) CNRM-CERFACS-CNRM-CM5: atmospheric forcings
+derived from pressure level fields, because of error in
+CNRM-CM5 model level fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RACMO22T</IRI>
+        <Literal>LK: no, UR: no, RI: no
+Model versions:
+Simulations with RACMO22T_v2 are straight reruns of
+RACMO22T_v1 employing the same model system and
+parameter settings.
+In AFR-44, v2 is only used with MOHC-HadGEM2-ES forcing
+to fix the remapping of SST to the RACMO grid in the
+v1-simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RCA4</IRI>
+        <Literal>LK: Flake (Mironov et al., 2010) pronostic lake ice
+Model versions: i) v1a is simply a re-run because a restart file
+to start the scenario experiment was taken from another
+simulations, ii) v2 and v3 are slightly tuned versions of v1
+(some parameters) but parameterizations are the same.
+SN indicates spectral nudging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RCSM4</IRI>
+        <Literal>RI: TRIP (Oki and Sud 1998, Decharme et al., 2010)
+interactive rivers connecting the atmosphere to the ocean.
+50km spatial resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#REMO2009</IRI>
+        <Literal>The model releases REMO2009 and REMO2015 differ in
+internal technical aspects related to refactoring and improving
+the model code. The physical parameterizations and the
+implementation of the dynamics are the same.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#REMO2015</IRI>
+        <Literal>The model releases REMO2009 and REMO2015 differ in
+internal technical aspects related to refactoring and improving
+the model code. The physical parameterizations and the
+implementation of the dynamics are the same.
+
+REMO2015 v2 refers to a rerun of the corresponding
+REMO2015 v1 simulation, which was necessary due to
+inconsistent model level and surface data in CNRM-CM5 GCM
+boundary conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ROM</IRI>
+        <Literal>RI: interactive rivers connecting the atmosphere to the ocean.
+Hydrological Discharge (HD) model with 50km spatial
+resolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegCM4</IRI>
+        <Literal>LK: Hostetler et al. (1993)
+UR: no
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegCM4-3</IRI>
+        <Literal>K: no
+UR: no
+RI: no
+
+Crop stomatal resistance: 45
+Crop leaf area index: 6
+- rainsnowtemp=1.2
+- dPs: 1/10 → 1/20
+- d_half (l840, mod_bats_bndry)
+
+For SEA-22, in addition on RU-CORE, these institutions also
+involved in producing the simulations:
+UKM, VNU-HUS, HUST, MO, AdMU, BMKG
+
+MED-44 (ITU) simulations (Kahraman et al., 2020), nested into
+HadGEM2, are not on ESGF, but they are available upon
+request.
+
+
+In addition to default setting, the following modifications were
+applied:
+- For crop land use: rsmin=45 (default:200),
+xlai=6 (default:4)
+- rainsnowtemp=1.2 (default: 2.2)
+- dPs=1/20 (default:1/10)
+d_half (l840, mod_bats_bndry)
+- critical Richardson number over ocean=0.05 (default:0.25)
+modifications in:
+mod_params (Main)
+mod_runparams (Main/mpplib)
+mod_pbl_common (Main/pbllib)
+mod_pbl_holtobl (Main/pbllib)
+and in the namelist (pbl parameters were added)
+(zzhnew only for ocean, vertical profile):
+if ( landmsk(j,i) == 0 ) then
+zzhnew = (d_one-zh)*d_r10
+else
+zzhnew = (d_one-zh)*d_rfour
+end if</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegCM4-4</IRI>
+        <Literal>K: no, UR: no, RI: no
+Model version: v0 corresponds to the original optimised
+configuration
+
+IITM VERSION
+LK: no
+UR: CLM4.5
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegCM4-6</IRI>
+        <Literal>LK: no
+UR: CLM4.5
+RI: no
+Model version: v1 is a rerun following a minor bug in boundary
+conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegCM4-7</IRI>
+        <Literal>LK: no
+UR: CLM4.5
+RI: no
+Model version: v0 corresponds to the original per-domain
+optimised configuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF</IRI>
+        <Literal>LK: no
+UR: no
+RI: no
+Spectral nudging used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF341E</IRI>
+        <Literal>LK: No
+UR: No
+RI: No
+Variable input GHG. E designation was for CORDEX physics
+ensemble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF341I</IRI>
+        <Literal>LK: no
+UR: no
+RI: no
+WRF v3.4.1. “I” stands for the coordinated physics
+configuration used within CORDEX. “v2” refers to the variable
+GHG input and noleap calendar in scenario (CanESM2)
+simulations. Otherwise, fully comparable to v1 in ERA-Interim
+(fixed GHG, standard cal.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF351</IRI>
+        <Literal>LK: no
+UR: no
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF360J</IRI>
+        <Literal>LK: no
+UR: single layer urban canopy model
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF360K</IRI>
+        <Literal>LK: no
+UR: single layer urban canopy model
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF360L</IRI>
+        <Literal>LK: no
+UR: single layer urban canopy model
+RI: no</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WRF381</IRI>
+        <Literal>Allow sub-grid cloud fraction interaction with radiation (Alapaty
+et al. 2012)
+The forcing variables have been bias-corrected using
+ERA-Interim fields for 1981-2005, as in Bruyere et al. (2014).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ucan_wrf341i</IRI>
+        <Literal>Downscaling realisation: v2
+
+WRF v3.4.1. “I” stands for the coordinated physics configuration used within CORDEX. “v2” refers to the variable GHG input and noleap calendar in scenario (CanESM2) simulations. Otherwise, fully comparable to v1 in ERA-Interim (fixed GHG, standard cal.)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

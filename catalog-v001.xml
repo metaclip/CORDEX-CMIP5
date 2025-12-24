@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1766581268759" name="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-datasets" uri="CORDEX-CMIP5-datasets.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1766581268759" name="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-institutes" uri="CORDEX-CMIP5-institutes.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1766581268759" name="duplicate:https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/main/CORDEX-CMIP5-models.owl" uri="CORDEX-CMIP5-models.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1766581268759" name="duplicate:https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/main/CORDEX-CMIP5-models.owl" uri="CORDEX-CMIP5-models%20copy.owx"/>
+    </group>
+</catalog>
