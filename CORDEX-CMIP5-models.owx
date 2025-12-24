@@ -15,1025 +15,366 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>https://metaclip.org/datasource/0.30/datasource.owl</Import>
     <Declaration>
-      <NamedIndividual IRI="#CNRM-ALADIN52-MED-44-v1"/>
+        <NamedIndividual IRI="#ALADIN52"/>
     </Declaration>
-    
     <Declaration>
-        <NamedIndividual IRI="#CNRM-ALADIN52-MED-11-v1"/>
+        <NamedIndividual IRI="#ALADIN53"/>
     </Declaration>
-    
     <Declaration>
-        <NamedIndividual IRI="#CNRM-ALADIN52-AFR-44-v1"/>
+        <NamedIndividual IRI="#ALADIN63"/>
     </Declaration>
-          
     <Declaration>
-        <NamedIndividual IRI="#CNRM-ALADIN53-EUR-11-v1"/>
+        <NamedIndividual IRI="#ALARO-0"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CNRM-ALADIN63-EUR-11-v1"/>
+        <NamedIndividual IRI="#CCAM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CNRM-ALADIN63-EUR-11-v2"/>
+        <NamedIndividual IRI="#CCAM-1704"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RMIB-UGent-ALARO-0-v1"/>
+        <NamedIndividual IRI="#CCAM-2008"/>
     </Declaration>
-
     <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-AFR-44i-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-17"/>
     </Declaration>
-     <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-ARC-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-AUS-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-CAM-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-CAS-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-EAS-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-EUR-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-MED-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-MED-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-MNA-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-NAM-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-SAM-44i-v1"/>
-    </Declaration>
-    <Declaration>
-       <NamedIndividual IRI="#CSIRO-CCAM-SEA-44i-v1"/>
-    </Declaration>
-    
-    
-    <Declaration>
-        <NamedIndividual IRI="#CSIRO-CCAM-1704-WAS-44i-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CSIRO-CCAM-1704-AUS-44i-v1"/>
-    </Declaration>
-     
-    
-    
-    <Declaration>
-        <NamedIndividual IRI="#CSIRO-CCAM-2008-ANT-44i-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CSIRO-CCAM-2008-AUS-44i-v1"/>
-    </Declaration>
-    <Declaration> 
-      <NamedIndividual IRI="#CLMcom-CCLM4-8-17-AFR-44-v1"/> 
-    </Declaration>
-    <Declaration> 
-      <NamedIndividual IRI="#CLMcom-CCLM4-8-17-EUR-11-v1"/> 
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-CLM3-5-AUS-44-v1"/>
-    </Declaration>
-    <Declaration>
-      <NamedIndividual IRI="#GUF-CCLM4-8-18-MED-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CMCC-CCLM4-8-19-MED-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CMCC-CCLM4-8-19-MED-44-v2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-KIT-CCLM5-0-15-AFR-22-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-HGZ-CCLM5-0-15-AUS-22-v1"/>
-    </Declaration>
-    
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-CCLM5-0-2-EAS-44-v1"/>
-    </Declaration>
-
-    <Declaration>
-      <NamedIndividual IRI="#CLMcom-GUF-CCLM5-0-9-NEMOMED12-3-6-MED-11-v1"/> 
-    </Declaration> 
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CLMcom-ETH-COSMO-crCLIM-v1-1-WAS-22-v1"/>
-    </Declaration> 
-    <Declaration>
-        <NamedIndividual IRI="#CMCC-COSMOMED-MED-44-v1"/>
-      </Declaration>
-   <Declaration>
-        <NamedIndividual IRI="#CMCC-COSMOMED-MED-11-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OURANOS-CRCM5-CAM-22-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OURANOS-CRCM5-CAM-44-v1"/>
-      </Declaration>
-      <Declaration>
-        <NamedIndividual IRI="#OURANOS-CRCM5-NAM-22-v1"/>
-      </Declaration>
-      
-      <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-AFR-44-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-AFR-22-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-ARC-44-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-ARC-22-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-EUR-44-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-EUR-22-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-NAM-44-r2"/>
-    </Declaration>
-       <Declaration>
-        <NamedIndividual IRI="#CCCma-CanRCM4-NAM-22-r2"/>
-    </Declaration>
-    
-    <Declaration>
-        <NamedIndividual IRI="#UNIBELGRADE-EBU-MED-44i"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UNIBELGRADE-EBU-POM2c-MED-44i"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#INPE-Eta-SAM-20-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-ANT-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-ARC-44-v1"/>
-      </Declaration>
-    <Declaration>
-      <NamedIndividual IRI="#DMI-HIRHAM5-EAS-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-NAM-44-v2"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-AFR-44-v2"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v2"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v3"/>
-      </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-EUR-11-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-EUR-11-v2"/>
-      </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-MED-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-MED-44-v2"/>
-      </Declaration>
-
-    
-      
-    <Declaration>
-        <NamedIndividual IRI="#ULg-MAR311-ANT-44-v1"/>
-    </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#ENEA-PROTHEUS-MED-44-v2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO21P-ANT-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO21P-ANT-44-v2"/>
-    </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO22E-EUR-11-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO22E-EUR-11-v2"/>
-    </Declaration>
-    
-    <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO22T-AFR-44-v1"/>
-    </Declaration>
-     <Declaration>
-        <NamedIndividual IRI="#KNMI-RACMO22T-AFR-44-v2"/>
-    </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-AFR-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-ARC-44-v1"/>
-      </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-CAM-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-EUR-11-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-NAM-44-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-SEA-22-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-EUR-11-v1a"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-WAS-44-v2"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-SAM-44-v3"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SMHI-RCA4-SN-ARC-44-v1"/>
-      </Declaration>
-      
-
-    
-    <Declaration>
-        <NamedIndividual IRI="#CNRM-RCSM4-MED-44-v1"/>
-      </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-AFR-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-EUR-11-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-SAM-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-WAS-44-v1"/>
-    </Declaration>
-    
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-AFR-22-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-AUS-22-v1"/>
-    </Declaration>
-     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-CAM-22-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-CAS-22-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-EAS-22-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-17-CLM3-5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-EUR-11-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-18"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-NAM-22-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-19"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-SAM-22-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-15"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-SEA-22-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-WAS-22-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-9-NEMOMED12-3-6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GERICS-REMO2015-EUR-11-v2"/>
+        <NamedIndividual IRI="#COSMO-crCLIM-v1-1"/>
     </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-MED-22-v1"/>
+        <NamedIndividual IRI="#COSMOMED"/>
     </Declaration>
-     <Declaration>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-MED-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-WAS-22-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-SEA-44-v1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-EUR-17-v1"/>
-    </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#MGO-RRCM-ARC-44-v1"/>
+        <NamedIndividual IRI="#CRCM5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISU-NCAR-RegCM4-NAM-22-v4-4-rc8"/>
+        <NamedIndividual IRI="#CanRCM4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ELU-RegCM4-3-MED-44-v1"/>
+        <NamedIndividual IRI="#EBU"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RegCM4-3-MED-44-v1"/>
+        <NamedIndividual IRI="#EBU-POM2c"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ELU-RegCM4-3-MED-44-v1"/>
+        <NamedIndividual IRI="#Eta"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-MED-44-v4"/>
+        <NamedIndividual IRI="#HIRHAM5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-CAM-44-v4"/>
+        <NamedIndividual IRI="#HadREM3-GA7-05"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-SAM-44-v4"/>
+        <NamedIndividual IRI="#LMDZ4NEMOMED8"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-SEA-44-v4"/>
+        <NamedIndividual IRI="#MAR311"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-MED-11-v4"/>
+        <NamedIndividual IRI="#PROTHEUS"/>
     </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#BOUN-RegCM4-3-CAS-44-v5"/>
+        <NamedIndividual IRI="#RACMO21P"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BOUN-RegCM4-3-MNA-44-v5"/>
+        <NamedIndividual IRI="#RACMO22E"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ITU-RegCM4-3-MED-44-v5"/>
+        <NamedIndividual IRI="#RACMO22T"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RegCM4-3-MED-44-v7"/>
+        <NamedIndividual IRI="#RCA4"/>
     </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RegCM4-4-EAS-22-v0"/>
+        <NamedIndividual IRI="#RCSM4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#IITM-RegCM4-4-WAS-22-v5"/>
+        <NamedIndividual IRI="#REMO2009"/>
     </Declaration>
-    
     <Declaration>
-        <NamedIndividual IRI="#ICTP-RegCM4-6-EUR-11-v1"/>
+        <NamedIndividual IRI="#REMO2015"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-AFR-22-v0"/>
+        <NamedIndividual IRI="#ROM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-AUS-22-v0"/>
+        <NamedIndividual IRI="#RRCM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-CAM-22-v0"/>
+        <NamedIndividual IRI="#RegCM4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-SAM-22-v0"/>
+        <NamedIndividual IRI="#RegCM4-3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-SEA-22-v0"/>
+        <NamedIndividual IRI="#RegCM4-4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-WAS-22-v0"/>
+        <NamedIndividual IRI="#RegCM4-6"/>
     </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#NCAR-UA-WRF-NAM-22-v3-5-1"/>
+        <NamedIndividual IRI="#RegCM4-7"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#NUIM-WRF341E-EUR-44-v1"/>
+        <NamedIndividual IRI="#WRF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UCAN-WRF341I-EUR-44-v2"/>
+        <NamedIndividual IRI="#WRF341E"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UCAN-WRF341I-SAM-44-v2"/>
+        <NamedIndividual IRI="#WRF341I"/>
     </Declaration>
-
     <Declaration>
-        <NamedIndividual IRI="#CYI-WRF351-MNA-44-v1"/>
+        <NamedIndividual IRI="#WRF351"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UNSW-WRF360J-AUS-44-v1"/>
+        <NamedIndividual IRI="#WRF360J"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UNSW-WRF360K-AUS-44-v1"/>
+        <NamedIndividual IRI="#WRF360K"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UNSW-WRF360L-AUS-44-v1"/>
+        <NamedIndividual IRI="#WRF360L"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UHOH-WRF361H-EUR-11-v1"/>
+        <NamedIndividual IRI="#WRF361H"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CRC-BGS-WRF381-EUR-44-v1"/>
+        <NamedIndividual IRI="#WRF381"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CRC-BGS-WRF381-MED-44-v1"/>
+        <NamedIndividual IRI="#WRF381P"/>
     </Declaration>
-
-    <Declaration>
-        <NamedIndividual IRI="#IPSL-WRF381P-EUR-11-v1"/>
-      </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#IPSL-WRF381P-EUR-11-v2"/>
-      </Declaration>
-
     <Declaration>
         <NamedIndividual IRI="#ucan_wrf341i"/>
     </Declaration>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN52-MED-44-v1"/>
+        <NamedIndividual IRI="#ALADIN52"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN52-MED-11-v1"/>
+        <NamedIndividual IRI="#ALADIN53"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN52-AFR-44-v1"/>
+        <NamedIndividual IRI="#ALADIN63"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN53-EUR-11-v1"/>
+        <NamedIndividual IRI="#ALARO-0"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN63-EUR-11-v1"/>
+        <NamedIndividual IRI="#CCAM"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-ALADIN63-EUR-11-v2"/>
+        <NamedIndividual IRI="#CCAM-1704"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#RMIB-UGent-ALARO-0-v1"/>
+        <NamedIndividual IRI="#CCAM-2008"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-AFR-44i-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-17"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-ARC-44i-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-17-CLM3-5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-AUS-44i-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-18"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-CAM-44i-v1"/>
+        <NamedIndividual IRI="#CCLM4-8-19"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-CAS-44i-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-15"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-EAS-44i-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-EUR-44i-v1"/>
+        <NamedIndividual IRI="#CCLM5-0-9-NEMOMED12-3-6"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-MED-44i-v1"/>
+        <NamedIndividual IRI="#COSMO-crCLIM-v1-1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-MNA-44i-v1"/>
+        <NamedIndividual IRI="#COSMOMED"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-NAM-44i-v1"/>
+        <NamedIndividual IRI="#CRCM5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-MED-44i-v1"/>
+        <NamedIndividual IRI="#EBU"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-SAM-44i-v1"/>
+        <NamedIndividual IRI="#EBU-POM2c"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-SEA-44i-v1"/>
+        <NamedIndividual IRI="#Eta"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-1704-WAS-44i-v1"/>
+        <NamedIndividual IRI="#HIRHAM5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-1704-AUS-44i-v1"/>
+        <NamedIndividual IRI="#HadREM3-GA7-05"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-2008-ANT-44i-v1"/>
+        <NamedIndividual IRI="#LMDZ4NEMOMED8"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CSIRO-CCAM-2008-AUS-44i-v1"/>
+        <NamedIndividual IRI="#MAR311"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-AFR-44-v1"/>
+        <NamedIndividual IRI="#PROTHEUS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-EUR-11-v1"/>
+        <NamedIndividual IRI="#RACMO21P"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-CCLM4-8-17-CLM3-5-AUS-44-v1"/>
+        <NamedIndividual IRI="#RACMO22E"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GUF-CCLM4-8-18-MED-44-v1"/>
+        <NamedIndividual IRI="#RACMO22T"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CMCC-CCLM4-8-19-MED-44-v1"/>
+        <NamedIndividual IRI="#RCA4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CMCC-CCLM4-8-19-MED-44-v2"/>
+        <NamedIndividual IRI="#RCSM4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-KIT-CCLM5-0-15-AFR-22-v1"/>
+        <NamedIndividual IRI="#REMO2009"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-HGZ-CCLM5-0-15-AUS-22-v1"/>
+        <NamedIndividual IRI="#REMO2015"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-CCLM5-0-2-EAS-44-v1"/>
+        <NamedIndividual IRI="#ROM"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-GUF-CCLM5-0-9-NEMOMED12-3-6-MED-11-v1"/>
+        <NamedIndividual IRI="#RRCM"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1"/>
+        <NamedIndividual IRI="#RegCM4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CLMcom-ETH-COSMO-crCLIM-v1-1-WAS-22-v1"/>
+        <NamedIndividual IRI="#RegCM4-3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CMCC-COSMOMED-MED-44-v1"/>
+        <NamedIndividual IRI="#RegCM4-4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CMCC-COSMOMED-MED-11-v1"/>
+        <NamedIndividual IRI="#RegCM4-6"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#OURANOS-CRCM5-CAM-22-v1"/>
+        <NamedIndividual IRI="#RegCM4-7"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#OURANOS-CRCM5-CAM-44-v1"/>
+        <NamedIndividual IRI="#WRF"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#OURANOS-CRCM5-NAM-22-v1"/>
+        <NamedIndividual IRI="#WRF341E"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-AFR-44-r2"/>
+        <NamedIndividual IRI="#WRF341I"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-AFR-22-r2"/>
+        <NamedIndividual IRI="#WRF351"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-ARC-44-r2"/>
+        <NamedIndividual IRI="#WRF360J"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-ARC-22-r2"/>
+        <NamedIndividual IRI="#WRF360K"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-EUR-44-r2"/>
+        <NamedIndividual IRI="#WRF360L"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-EUR-22-r2"/>
+        <NamedIndividual IRI="#WRF361H"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-NAM-44-r2"/>
+        <NamedIndividual IRI="#WRF381"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CCCma-CanRCM4-NAM-22-r2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UNIBELGRADE-EBU-MED-44i"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UNIBELGRADE-EBU-POM2c-MED-44i"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#INPE-Eta-SAM-20-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-ANT-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-ARC-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EAS-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-NAM-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-AFR-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#DMI-HIRHAM5-EUR-11-v3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MOHC-HadREM3-GA7-05-EUR-11-v2"/>
-    </ClassAssertion>
-    
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-MED-44-v1"/>
-    </ClassAssertion>    
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#LMD-LMDZ4NEMOMED8-MED-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ULg-MAR311-ANT-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ENEA-PROTHEUS-MED-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO21P-ANT-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO21P-ANT-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO22E-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO22E-EUR-11-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO22T-AFR-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#KNMI-RACMO22T-AFR-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-AFR-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-ARC-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-CAM-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-NAM-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-SEA-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-EUR-11-v1a"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-WAS-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-SAM-44-v3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#SMHI-RCA4-SN-ARC-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CNRM-RCSM4-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-AFR-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-SAM-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MPI-CSC-REMO2009-WAS-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-AFR-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-AUS-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-CAM-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-CAS-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-EAS-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-NAM-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-SAM-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-SEA-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-WAS-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-REMO2015-EUR-11-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-MED-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-WAS-22-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-SEA-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#GERICS-AWI-ROM-EUR-17-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#MGO-RRCM-ARC-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ISU-NCAR-RegCM4-NAM-22-v4-4-rc8"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ELU-RegCM4-3-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ELU-RegCM4-3-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RegCM4-3-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-MED-44-v4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-CAM-44-v4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-SAM-44-v4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-SEA-44-v4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RU-CORE-RegCM4-3-MED-11-v4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#BOUN-RegCM4-3-CAS-44-v5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#BOUN-RegCM4-3-MNA-44-v5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ITU-RegCM4-3-MED-44-v5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RegCM4-3-MED-44-v7"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RegCM4-4-EAS-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#IITM-RegCM4-4-WAS-22-v5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-RegCM4-6-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-AFR-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-AUS-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-CAM-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-SAM-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-SEA-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#ICTP-ORNL-RegCM4-7-WAS-22-v0"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#NCAR-UA-WRF-NAM-22-v3-5-1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#NUIM-WRF341E-EUR-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UCAN-WRF341I-EUR-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UCAN-WRF341I-SAM-44-v2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CYI-WRF351-MNA-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UNSW-WRF360J-AUS-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UNSW-WRF360K-AUS-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UNSW-WRF360L-AUS-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#UHOH-WRF361H-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CRC-BGS-WRF381-EUR-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#CRC-BGS-WRF381-MED-44-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#IPSL-WRF381P-EUR-11-v1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
-        <NamedIndividual IRI="#IPSL-WRF381P-EUR-11-v2"/>
+        <NamedIndividual IRI="#WRF381P"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://metaclip.org/datasource/datasource.owl#RCM"/>
         <NamedIndividual IRI="#ucan_wrf341i"/>
     </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://metaclip.org/datasource/datasource.owl#withVersionTag"/>
+        <NamedIndividual IRI="#ucan_wrf341i"/>
+        <Literal>v1.0</Literal>
+    </DataPropertyAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CNRM-ALADIN52-MED-44-v1</IRI>
+        <IRI>#ALADIN52</IRI>
         <Literal>LK: no
 UR: Urban areas are considered as rock (Daniel et al. (2019)
 
@@ -1047,7 +388,7 @@ scenarios) upon request.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CNRM-ALADIN53-EUR-11-v1</IRI>
+        <IRI>#ALADIN53</IRI>
         <Literal>LK: no
 UR: Urban areas are considered as rock (Daniel et al. (2019)
 
@@ -1061,7 +402,7 @@ scenarios) upon request.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CNRM-ALADIN63-EUR-11-v1</IRI>
+        <IRI>#ALADIN63</IRI>
         <Literal>LK: Flake (Moigne et al. (2016)), pronostic lake ice.
 UR: Urban areas are considered as rock (Daniel et al. (2019)
 
@@ -1071,7 +412,7 @@ the CNRM-CM5 Atmospheric-LBCs contrary to ALADIN53_v1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CSIRO-CCAM-AFR-44i-v1</IRI>
+        <IRI>#CCAM</IRI>
         <Literal>UR: UCLEM (Lipson et al., 2018)
 
 CCAM employed two downscaling methods with
@@ -1088,7 +429,7 @@ inherited from the GCMs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CSIRO-CCAM-1704-WAS-44i-v1</IRI>
+        <IRI>#CCAM-1704</IRI>
         <Literal>UR: UCLEM (Lipson et al., 2018)
 
 CCAM employed two downscaling methods with
@@ -1105,7 +446,7 @@ inherited from the GCMs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CSIRO-CCAM-2008-ANT-44i-v1</IRI>
+        <IRI>#CCAM-2008</IRI>
         <Literal>UR: UCLEM (Lipson et al 2018)
 RI: Miller (1994)
 
@@ -1123,34 +464,34 @@ inherited from the GCMs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CLMcom-CCLM4-8-17-AFR-44-v1</IRI>
+        <IRI>#CCLM4-8-17</IRI>
         <Literal>LK: no, UR: no, RI: no
 
 Simulation carried out by KIT.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GUF-CCLM4-8-18-MED-44-v1</IRI>
+        <IRI>#CCLM4-8-18</IRI>
         <Literal>LK: no
 UR: no
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CLMcom-KIT-CCLM5-0-15-AFR-22-v1</IRI>
+        <IRI>#CCLM5-0-15</IRI>
         <Literal>LK: FLake (Mironov et al. 2010)
 UR: no
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CLMcom-CCLM5-0-2-EAS-44-v1</IRI>
+        <IRI>#CCLM5-0-2</IRI>
         <Literal>urface roughness: GLOBE (NOAA/NGDC); Global
 Land Cover 2000 Project (GLC2000)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CLMcom-GUF-CCLM5-0-9-NEMOMED12-3-6-MED-11-v1</IRI>
+        <IRI>#CCLM5-0-9-NEMOMED12-3-6</IRI>
         <Literal>RI: TRIP (Total Runoff Integrating Pathways) is used as the
 interactive river component for rivers over the Mediterranean
 Basin to feed runoff at the river mouths to the Mediterranean
@@ -1158,7 +499,7 @@ Sea (NEMOMED12)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CLMcom-ETH-COSMO-crCLIM-v1-1-EUR-11-v1</IRI>
+        <IRI>#COSMO-crCLIM-v1-1</IRI>
         <Literal>COSMO-crCLIM is similar to CCLM. Its main characteristics
 are that it runs on GPUs and includes the soil hydrology
 scheme of Schlemmer et al (2018). Other adjustments include
@@ -1167,7 +508,7 @@ velocity instead of all dynamical fields (Klemp et al., 2008)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OURANOS-CRCM5-CAM-22-v1</IRI>
+        <IRI>#CRCM5</IRI>
         <Literal>LK: Flake (Mironov et al., 2010)
 
 Spectral nudging on U and V, linearly between ~470 hPa and
@@ -1184,7 +525,7 @@ wider NAM-22 domain (20 grid points larger to the east)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CCCma-CanRCM4-AFR-44-r2</IRI>
+        <IRI>#CanRCM4</IRI>
         <Literal>Full atmospheric physics package identical to that used by
 parent global model, CanAM4, used by CanESM2 for CMIP5.
 Historical + RCP8.5 large ensemble (50 members) of &apos;NAM-44&apos;
@@ -1193,31 +534,31 @@ CanESM2.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UNIBELGRADE-EBU-MED-44i</IRI>
+        <IRI>#EBU</IRI>
         <Literal>LK: no, UR: no, RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UNIBELGRADE-EBU-POM2c-MED-44i</IRI>
+        <IRI>#EBU-POM2c</IRI>
         <Literal>LK: no, UR: no, RI: no
 Same as EBU, but coupled to POM ocean model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#INPE-Eta-SAM-20-v1</IRI>
+        <IRI>#Eta</IRI>
         <Literal>LK: no, UR: no, RI: no
 No orography smoothing; No internal and no lateral boundary
 relaxation nudging.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#DMI-HIRHAM5-ANT-44-v1</IRI>
+        <IRI>#HIRHAM5</IRI>
         <Literal>The different versions v1, v2, v3, are simulation versions due
 to necessary re-runs, not different model versions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MOHC-HadREM3-GA7-05-EUR-11-v1</IRI>
+        <IRI>#HadREM3-GA7-05</IRI>
         <Literal>LK: no
 v2 runs are using CNRM boundary conditions from pressure
 level 3D data. This is because CNRM model level 3D data
@@ -1228,24 +569,24 @@ conditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#LMD-LMDZ4NEMOMED8-MED-44-v1</IRI>
+        <IRI>#LMDZ4NEMOMED8</IRI>
         <Literal>RI: Interactive river coupling in v2. No river coupling in v1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ULg-MAR311-ANT-44-v1</IRI>
+        <IRI>#MAR311</IRI>
         <Literal>SISVAT model: 30 snow/ice layers over the ice sheet and two
 sub-pixels (rocs and permanent ice-covered area)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ENEA-PROTHEUS-MED-44-v2</IRI>
+        <IRI>#PROTHEUS</IRI>
         <Literal>RI: Fully interactive (daily coupling) using the TRIP river routine
 model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KNMI-RACMO21P-ANT-44-v1</IRI>
+        <IRI>#RACMO21P</IRI>
         <Literal>LK: no, UR: no, RI: no
 Model versions:
 Simulations with RACMO21P_v2 are straight reruns of
@@ -1257,7 +598,7 @@ the RACMO grid in the v1-simulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KNMI-RACMO22E-EUR-11-v1</IRI>
+        <IRI>#RACMO22E</IRI>
         <Literal>LK: no, UR: no, RI: no
 Model versions:
 Simulations with RACMO22E_v2 are straight reruns of
@@ -1272,7 +613,7 @@ CNRM-CM5 model level fields</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KNMI-RACMO22T-AFR-44-v1</IRI>
+        <IRI>#RACMO22T</IRI>
         <Literal>LK: no, UR: no, RI: no
 Model versions:
 Simulations with RACMO22T_v2 are straight reruns of
@@ -1284,7 +625,7 @@ v1-simulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SMHI-RCA4-AFR-44-v1</IRI>
+        <IRI>#RCA4</IRI>
         <Literal>LK: Flake (Mironov et al., 2010) pronostic lake ice
 Model versions: i) v1a is simply a re-run because a restart file
 to start the scenario experiment was taken from another
@@ -1294,14 +635,14 @@ SN indicates spectral nudging.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CNRM-RCSM4-MED-44-v1</IRI>
+        <IRI>#RCSM4</IRI>
         <Literal>RI: TRIP (Oki and Sud 1998, Decharme et al., 2010)
 interactive rivers connecting the atmosphere to the ocean.
 50km spatial resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MPI-CSC-REMO2009-AFR-44-v1</IRI>
+        <IRI>#REMO2009</IRI>
         <Literal>The model releases REMO2009 and REMO2015 differ in
 internal technical aspects related to refactoring and improving
 the model code. The physical parameterizations and the
@@ -1309,7 +650,7 @@ implementation of the dynamics are the same.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GERICS-REMO2015-AFR-22-v1</IRI>
+        <IRI>#REMO2015</IRI>
         <Literal>The model releases REMO2009 and REMO2015 differ in
 internal technical aspects related to refactoring and improving
 the model code. The physical parameterizations and the
@@ -1322,21 +663,21 @@ boundary conditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GERICS-AWI-ROM-MED-22-v1</IRI>
+        <IRI>#ROM</IRI>
         <Literal>RI: interactive rivers connecting the atmosphere to the ocean.
 Hydrological Discharge (HD) model with 50km spatial
 resolution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ELU-RegCM4-3-MED-44-v1</IRI>
+        <IRI>#RegCM4</IRI>
         <Literal>LK: Hostetler et al. (1993)
 UR: no
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ICTP-RU-CORE-RegCM4-3-MED-44-v4</IRI>
+        <IRI>#RegCM4-3</IRI>
         <Literal>K: no
 UR: no
 RI: no
@@ -1379,7 +720,7 @@ end if</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ICTP-RegCM4-4-EAS-22-v0</IRI>
+        <IRI>#RegCM4-4</IRI>
         <Literal>K: no, UR: no, RI: no
 Model version: v0 corresponds to the original optimised
 configuration
@@ -1391,7 +732,7 @@ RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ICTP-RegCM4-6-EUR-11-v1</IRI>
+        <IRI>#RegCM4-6</IRI>
         <Literal>LK: no
 UR: CLM4.5
 RI: no
@@ -1400,7 +741,7 @@ conditions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ICTP-ORNL-RegCM4-7-AFR-22-v0</IRI>
+        <IRI>#RegCM4-7</IRI>
         <Literal>LK: no
 UR: CLM4.5
 RI: no
@@ -1409,7 +750,7 @@ optimised configuration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NCAR-UA-WRF-NAM-22-v3-5-1</IRI>
+        <IRI>#WRF</IRI>
         <Literal>LK: no
 UR: no
 RI: no
@@ -1417,7 +758,7 @@ Spectral nudging used.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NUIM-WRF341E-EUR-44-v1</IRI>
+        <IRI>#WRF341E</IRI>
         <Literal>LK: No
 UR: No
 RI: No
@@ -1426,7 +767,7 @@ ensemble</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UCAN-WRF341I-EUR-44-v2</IRI>
+        <IRI>#WRF341I</IRI>
         <Literal>LK: no
 UR: no
 RI: no
@@ -1438,35 +779,35 @@ simulations. Otherwise, fully comparable to v1 in ERA-Interim
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CYI-WRF351-MNA-44-v1</IRI>
+        <IRI>#WRF351</IRI>
         <Literal>LK: no
 UR: no
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UNSW-WRF360J-AUS-44-v1</IRI>
+        <IRI>#WRF360J</IRI>
         <Literal>LK: no
 UR: single layer urban canopy model
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UNSW-WRF360K-AUS-44-v1</IRI>
+        <IRI>#WRF360K</IRI>
         <Literal>LK: no
 UR: single layer urban canopy model
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UNSW-WRF360L-AUS-44-v1</IRI>
+        <IRI>#WRF360L</IRI>
         <Literal>LK: no
 UR: single layer urban canopy model
 RI: no</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CRC-BGS-WRF381-EUR-44-v1</IRI>
+        <IRI>#WRF381</IRI>
         <Literal>Allow sub-grid cloud fraction interaction with radiation (Alapaty
 et al. 2012)
 The forcing variables have been bias-corrected using
