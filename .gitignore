@@ -1,7 +1,7 @@
 #project-specific ignores
 .vscode/
 *.csv
-
+catalog*.xml
 
 
 # Byte-compiled / optimized / DLL files
