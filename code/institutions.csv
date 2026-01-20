@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:034a542cea6aa5f0f68e45f2f2eda8ff8a0d89d9b305fed1a403e016a7cd34dc
-size 2194
-=======
 Institution;Acronym
 Ateneo de Manila University;AdMU
 Alfred Wegener Institute;AWI
@@ -55,4 +50,3 @@ Universiti Kebangsaan Malaysia;UKM
 University of New South Wales;UNSW
 Université du Québec à Montréal;UQAM
 Hanoi University of Science, Vietnam National University;VNU-HUS
->>>>>>> ae4cf28 (code and vocab changes)

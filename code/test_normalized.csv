@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:afb315d8e08337af34fa29d23c76c3bdf8125f84edf375b78755ca3966da3a3a
-size 2303
-=======
 Unnamed: 0,domain,end_year,ensemble_member,experiment,gcm_model,horizontal_resolution,rcm_model,start_year,temporal_resolution,variable,gcm_institution,gcm_model_name,rcm_institution,rcm_model_name,dataset_id
 0,AFR-22,,r0i0p0,evaluation,era_interim,0_22_degree_x_0_22_degree,clmcom_kit_cclm5_0_15,,fixed,orography,era,era_interim,clmcom_kit_cclm5_0,CLMcom-DWD-CCLM5-0-15,afr-22-era_interim-r0i0p0-clmcom-dwd-cclm5-0-15-evaluation
 1,AFR-22,,r0i0p0,evaluation,era_interim,0_22_degree_x_0_22_degree,clmcom_kit_cclm5_0_15,,fixed,land_area_fraction,era,era_interim,clmcom_kit_cclm5_0,CLMcom-DWD-CCLM5-0-15,afr-22-era_interim-r0i0p0-clmcom-dwd-cclm5-0-15-evaluation
@@ -14,4 +9,3 @@ Unnamed: 0,domain,end_year,ensemble_member,experiment,gcm_model,horizontal_resol
 7,AFR-44,,r0i0p0,evaluation,era_interim,0_44_degree_x_0_44_degree,smhi_rca4,,fixed,land_area_fraction,era,era_interim,smhi,SMHI-RCA4,afr-44-era_interim-r0i0p0-smhi-rca4-evaluation
 8,AFR-44,,r0i0p0,historical,ipsl_cm5a_lr,0_44_degree_x_0_44_degree,gerics_remo2009,,fixed,orography,ipsl,IPSL-IPSL-CM5A-LR,gerics,GERICS-AWI-REMO2009,afr-44-ipsl-ipsl-cm5a-lr-r0i0p0-gerics-awi-remo2009-historical
 9,AFR-44,,r0i0p0,historical,ipsl_cm5a_lr,0_44_degree_x_0_44_degree,gerics_remo2009,,fixed,land_area_fraction,ipsl,IPSL-IPSL-CM5A-LR,gerics,GERICS-AWI-REMO2009,afr-44-ipsl-ipsl-cm5a-lr-r0i0p0-gerics-awi-remo2009-historical
->>>>>>> ae4cf28 (code and vocab changes)

@@ -71,12 +71,17 @@ DOMAIN_BASE_MAPPING = {
     'south_east_asia': 'SEA'
 }
 
-# =============================================================================
+
 # MAPPING LOADING FUNCTIONS
-# =============================================================================
+
 
 def load_rcm_mapping():
-    """Loads RCM mapping from CORDEX_RCMs_ToU.txt"""
+    """Loads RCM mapping from CORDEX_RCMs_ToU.txt
+    
+    Returns dict with:
+        - key: lowercase normalized variant
+        - value: tuple (full_rcm_id, institute_id)
+    """
     rcm_mapping = {}
     if not RCMS_FILE.exists():
         print(f"Warning: {RCMS_FILE} not found")
@@ -91,15 +96,16 @@ def load_rcm_mapping():
             parts = line.split()
             if len(parts) >= 2:
                 rcm_id = parts[0]
-                # Create flexible mappings
+                institute_id = parts[1]
+                # Create flexible mappings - store tuple (full_id, institute)
                 key = rcm_id.lower().replace('-', '_')
-                rcm_mapping[key] = rcm_id
+                rcm_mapping[key] = (rcm_id, institute_id)
                 
                 # Additional mappings for common variants
                 if '_' in key:
                     base_key = key.split('_')[0]
                     if base_key not in rcm_mapping:
-                        rcm_mapping[base_key] = rcm_id
+                        rcm_mapping[base_key] = (rcm_id, institute_id)
                 
     print(f"  Loaded {len(rcm_mapping)} RCM mappings")
     return rcm_mapping
@@ -133,9 +139,9 @@ def load_gcm_mapping():
     print(f"  Loaded {len(gcm_mapping)} GCM mappings")
     return gcm_mapping
 
-# =============================================================================
+
 # NORMALIZATION FUNCTIONS
-# =============================================================================
+
 
 def extract_resolution_from_horizontal_resolution(horizontal_resolution):
     """
@@ -199,9 +205,12 @@ def normalize_gcm(gcm_model, gcm_mapping):
     return gcm_model
 
 def normalize_rcm(rcm_model, rcm_mapping):
-    """Normalizes RCM name using reference mapping"""
+    """Normalizes RCM name using reference mapping
+    
+    Returns tuple (full_rcm_id, institute_id) or (original, None) if not found
+    """
     if not rcm_model:
-        return rcm_model
+        return (rcm_model, None)
         
     rcm_key = rcm_model.lower().replace('-', '_').strip()
     
@@ -214,14 +223,26 @@ def normalize_rcm(rcm_model, rcm_mapping):
         if rcm_key in key or key in rcm_key:
             return value
             
-    return rcm_model
+    return (rcm_model, None)
 
-def clean_token(s):
-    """Cleans a token for use in dataset_id"""
+def clean_token(s, preserve_hyphen=False):
+    """Cleans a token for use in dataset_id.
+
+    Args:
+        s: input string
+        preserve_hyphen: if True, keep hyphens (used for domain like 'AFR-44')
+    """
     if not s:
         return ''
     s = str(s).strip().replace(' ', '_')
-    s = re.sub(r'[^A-Za-z0-9_\-]', '', s)
+    if preserve_hyphen:
+        # Allow letters, numbers, underscore and hyphen
+        s = re.sub(r'[^A-Za-z0-9_\-]', '', s)
+    else:
+        # Normalize hyphens to underscores so separator is consistent
+        s = s.replace('-', '_')
+        # Allow only alphanumeric and underscore
+        s = re.sub(r'[^A-Za-z0-9_]', '', s)
     return s.lower()
 
 def last_tokens(s, n=2):
@@ -232,44 +253,6 @@ def last_tokens(s, n=2):
     return '_'.join(parts[-n:])
 
 def regenerate_dataset_id(row):
-<<<<<<< HEAD
-    """Regenerates dataset_id with normalized names.
-
-    Format: DOMAIN-RESOLUTION_GCM_EXPERIMENT_ENSEMBLE_RCM
-    Example: "EUR-44_IPSL-CM5A-MR_rcp85_r1i1p1_RCA4"
-
-    The function preserves canonical GCM/RCM names (case and hyphens) and the
-    ensemble string as provided. Domain is normalized using normalize_domain().
-    """
-    # Ensure domain is normalized (DOMAIN-RES resolution)
-    domain_val = row.get('domain', '')
-    horiz = row.get('horizontal_resolution') or row.get('horizontal_resolution', '')
-    if '-' in str(domain_val) and domain_val.split('-')[0].upper() in DOMAIN_BASE_MAPPING.values():
-        domain_norm = domain_val
-    else:
-        domain_norm = normalize_domain(domain_val, horiz) if domain_val else ''
-
-    # Use canonical GCM/RCM if provided; otherwise fall back to raw fields
-    gcm_raw = row.get('gcm_model_name') or row.get('gcm_model') or ''
-    rcm_raw = row.get('rcm_model_name') or row.get('rcm_model') or ''
-    experiment = row.get('experiment', '') or ''
-    ensemble = row.get('ensemble_member', '') or ''
-
-    # Sanitize GCM/RCM to remove spaces and disallowed chars but preserve case and hyphens
-    def sanitize_preserve_case(s):
-        if not s:
-            return ''
-        s = str(s).strip().replace(' ', '_')
-        # keep letters, numbers, underscore and hyphen
-        s = re.sub(r'[^A-Za-z0-9_\-]', '', s)
-        return s
-
-    gcm_name = sanitize_preserve_case(gcm_raw)
-    rcm_name = sanitize_preserve_case(rcm_raw)
-
-    parts = [p for p in [domain_norm, gcm_name, experiment, ensemble, rcm_name] if p]
-    return '_'.join(parts)
-=======
     """Regenerates dataset_id with normalized names"""
     domain = row['domain']
     gcm = row['gcm_model_name'] 
@@ -277,20 +260,71 @@ def regenerate_dataset_id(row):
     rcm = row['rcm_model_name']
     experiment = row['experiment']
     
-    # Clean and extract relevant parts
-    domain_clean = clean_token(domain)
-    gcm_name = last_tokens(clean_token(gcm), 2)
-    ensemble_clean = clean_token(ensemble)
-    rcm_name = last_tokens(clean_token(rcm), 1)
-    exp_clean = clean_token(experiment)
-    
-    parts = [p for p in [domain_clean, gcm_name, ensemble_clean, rcm_name, exp_clean] if p]
-    return '-'.join(parts)
->>>>>>> ae4cf28 (code and vocab changes)
+    # Format each facet according to requested rules:
+    # - domain: already normalized by normalize_domain (e.g., 'AFR-44') -> keep as-is
+    domain_clean = domain
 
-# =============================================================================
+    # - GCM: extract model part only (after institution prefix)
+    #   Format in mapping is "Institution-ModelName", we want only "ModelName"
+    gcm_token = (gcm or '').strip()
+    if gcm_token:
+        # Split on first hyphen to separate institution from model
+        if '-' in gcm_token:
+            parts = gcm_token.split('-', 1)
+            if len(parts) == 2:
+                gcm_token = parts[1]  # Keep only model part
+        # Replace any remaining internal underscores with hyphens
+        gcm_token = re.sub(r'\s+', '', gcm_token)
+        gcm_token = gcm_token.replace('_', '-')
+
+    # - Experiment: compact rcp variants to 'rcpXY' (e.g., rcp_8_5 -> rcp85),
+    #   otherwise clean to alphanum lowercase (e.g., 'historical')
+    exp_token = (experiment or '').strip().lower()
+    if exp_token:
+        # match rcp patterns like rcp_8_5, rcp-8-5, rcp85
+        m = re.match(r'rcp[_\-]?(\d{1,2})[_\-]?(\d{1,2})', exp_token)
+        if m:
+            exp_token = f"rcp{m.group(1)}{m.group(2)}"
+        else:
+            # remove non-alphanumeric
+            exp_token = re.sub(r'[^a-z0-9]', '', exp_token)
+
+    # - Ensemble: keep as-is but clean non-alphanumeric and lowercase
+    ens_token = (ensemble or '').strip().lower()
+    if ens_token:
+        ens_token = re.sub(r'[^a-z0-9]', '', ens_token)
+
+    # - RCM: extract model part only (strip institute prefix)
+    #   rcm is now a tuple (full_rcm_id, institute_id) from normalize_rcm
+    rcm_token = ''
+    if isinstance(rcm, tuple):
+        full_rcm_id, institute_id = rcm
+        if full_rcm_id and institute_id:
+            # Remove institute prefix from RCM model name
+            # Format is typically "Institute-ModelName" or "Institute1-Institute2-ModelName"
+            # Use institute_id to strip the prefix
+            rcm_token = full_rcm_id
+            # Try to remove institute prefix (case-insensitive match)
+            if rcm_token.lower().startswith(institute_id.lower() + '-'):
+                rcm_token = rcm_token[len(institute_id)+1:]
+        else:
+            rcm_token = full_rcm_id or ''
+    else:
+        # Fallback if rcm is not a tuple (shouldn't happen with updated code)
+        rcm_token = (rcm or '').strip()
+    
+    # Clean up RCM token: replace underscores with hyphens, remove spaces
+    if rcm_token:
+        rcm_token = re.sub(r'\s+', '', rcm_token)
+        rcm_token = rcm_token.replace('_', '-')
+
+    parts = [p for p in [domain_clean, gcm_token, exp_token, ens_token, rcm_token] if p]
+    # Use underscore as separator between dataset facets
+    return '_'.join(parts)
+
+
 # MAIN NORMALIZATION FUNCTION
-# =============================================================================
+
 
 def normalize_csv(test_mode=False):
     """
@@ -363,15 +397,22 @@ def normalize_csv(test_mode=False):
                 
                 # Normalize RCM  
                 original_rcm = row['rcm_model_name']
-                row['rcm_model_name'] = normalize_rcm(original_rcm, rcm_mapping)
-                if row['rcm_model_name'] != original_rcm:
+                normalized_rcm_tuple = normalize_rcm(original_rcm, rcm_mapping)
+                # Extract full RCM ID from tuple for display/storage
+                normalized_rcm_id = normalized_rcm_tuple[0] if isinstance(normalized_rcm_tuple, tuple) else normalized_rcm_tuple
+                row['rcm_model_name'] = normalized_rcm_id
+                if normalized_rcm_id != original_rcm:
                     stats['rcms_normalized'] += 1
                     if test_mode:
-                        print(f"  RCM: {original_rcm} -> {row['rcm_model_name']}")
+                        print(f"  RCM: {original_rcm} -> {normalized_rcm_id}")
                         
                 # Regenerate dataset_id with normalized names
+                # Pass the full tuple to regenerate_dataset_id for RCM processing
                 old_id = row['dataset_id']
-                row['dataset_id'] = regenerate_dataset_id(row)
+                # Create a modified row dict with the tuple for regenerate_dataset_id
+                row_for_id = row.copy()
+                row_for_id['rcm_model_name'] = normalized_rcm_tuple
+                row['dataset_id'] = regenerate_dataset_id(row_for_id)
                 if test_mode:
                     print(f"  ID: {old_id} -> {row['dataset_id']}")
                 
@@ -392,9 +433,9 @@ def normalize_csv(test_mode=False):
         traceback.print_exc()
         return None
 
-# =============================================================================
+
 # FUNCTIONS FOR GENERATING OWX ENTRIES
-# =============================================================================
+
 
 def ensure_csv():
     """Ensures an input CSV exists, prioritizing the normalized one"""
@@ -411,22 +452,8 @@ def ensure_csv():
         raise FileNotFoundError('No input CSV found.')
 
 def collect_dataset_ids(csv_path):
-<<<<<<< HEAD
-    """Extracts unique dataset_ids from CSV. If dataset_id column is missing,
-    regenerate dataset_ids using normalization mappings.
-
-    This function attempts to normalize GCM/RCM names using reference mappings
-    before generating the ID so the resulting ID is canonical.
-    """
-    ids = set()
-    # Load mappings so we can normalize names if needed
-    rcm_mapping = load_rcm_mapping()
-    gcm_mapping = load_gcm_mapping()
-
-=======
     """Extracts unique dataset_ids from CSV"""
     ids = set()
->>>>>>> ae4cf28 (code and vocab changes)
     with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         if 'dataset_id' in (reader.fieldnames or []):
@@ -438,50 +465,6 @@ def collect_dataset_ids(csv_path):
 
     # If dataset_id is not present, calculate on the fly
     print('dataset_id not present; calculating from existing columns...')
-<<<<<<< HEAD
-
-    with open(csv_path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            domain_raw = r.get('domain','')
-            horiz = r.get('horizontal_resolution','')
-            # Normalize domain to CORDEX code with resolution
-            domain_norm = normalize_domain(domain_raw, horiz) if domain_raw else ''
-
-            # Prefer canonical names if already present in split CSV; else try to normalize using mappings
-            g_raw = r.get('gcm_model_name') or r.get('gcm_model') or ''
-            r_raw = r.get('rcm_model_name') or r.get('rcm_model') or ''
-
-            # Try to map to canonical values using mapping dicts
-            def canonical_gcm_name(raw):
-                key = raw.lower().replace('-', '_').strip()
-                if key in gcm_mapping:
-                    return gcm_mapping[key]
-                for k, v in gcm_mapping.items():
-                    if key in k or k in key:
-                        return v
-                return raw
-
-            def canonical_rcm_name(raw):
-                key = raw.lower().replace('-', '_').strip()
-                if key in rcm_mapping:
-                    return rcm_mapping[key]
-                for k, v in rcm_mapping.items():
-                    if key in k or k in key:
-                        return v
-                return raw
-
-            gcm_canon = canonical_gcm_name(g_raw)
-            rcm_canon = canonical_rcm_name(r_raw)
-
-            row_mock = {
-                'domain': domain_norm,
-                'horizontal_resolution': horiz,
-                'gcm_model_name': gcm_canon,
-                'ensemble_member': r.get('ensemble_member',''),
-                'rcm_model_name': rcm_canon,
-                'experiment': r.get('experiment','')
-=======
     
     with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -499,7 +482,6 @@ def collect_dataset_ids(csv_path):
                 'ensemble_member': ens,
                 'rcm_model_name': rcm,
                 'experiment': exp
->>>>>>> ae4cf28 (code and vocab changes)
             }
             did = regenerate_dataset_id(row_mock)
             if did:
@@ -572,9 +554,9 @@ def generate_owx_entries():
     print(f'Done. Inserted: {inserted}')
     return inserted
 
-# =============================================================================
+
 # MAIN FUNCTION
-# =============================================================================
+
 
 def main():
     """Main function with command line options"""
@@ -616,12 +598,10 @@ Usage examples:
             print("\nExecuting OWX entry insertion...")
             inserted = generate_owx_entries()
         
-        print("\n=== PROCESS COMPLETED ===")
+
         print("Generated files:")
         if NORMALIZED_CSV.exists():
             print(f"  - Normalized CSV: {NORMALIZED_CSV}")
-        if BAK_OWX.exists():
-            print(f"  - Backup copy: {BAK_OWX}")
         print(f"  - Updated OWX: {OWX}")
         
     except Exception as e:
