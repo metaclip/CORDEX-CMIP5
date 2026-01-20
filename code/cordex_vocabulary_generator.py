@@ -71,9 +71,9 @@ DOMAIN_BASE_MAPPING = {
     'south_east_asia': 'SEA'
 }
 
-# =============================================================================
+
 # MAPPING LOADING FUNCTIONS
-# =============================================================================
+
 
 def load_rcm_mapping():
     """Loads RCM mapping from CORDEX_RCMs_ToU.txt
@@ -139,9 +139,9 @@ def load_gcm_mapping():
     print(f"  Loaded {len(gcm_mapping)} GCM mappings")
     return gcm_mapping
 
-# =============================================================================
+
 # NORMALIZATION FUNCTIONS
-# =============================================================================
+
 
 def extract_resolution_from_horizontal_resolution(horizontal_resolution):
     """
@@ -322,9 +322,9 @@ def regenerate_dataset_id(row):
     # Use underscore as separator between dataset facets
     return '_'.join(parts)
 
-# =============================================================================
+
 # MAIN NORMALIZATION FUNCTION
-# =============================================================================
+
 
 def normalize_csv(test_mode=False):
     """
@@ -433,9 +433,9 @@ def normalize_csv(test_mode=False):
         traceback.print_exc()
         return None
 
-# =============================================================================
+
 # FUNCTIONS FOR GENERATING OWX ENTRIES
-# =============================================================================
+
 
 def ensure_csv():
     """Ensures an input CSV exists, prioritizing the normalized one"""
@@ -554,9 +554,9 @@ def generate_owx_entries():
     print(f'Done. Inserted: {inserted}')
     return inserted
 
-# =============================================================================
+
 # MAIN FUNCTION
-# =============================================================================
+
 
 def main():
     """Main function with command line options"""
@@ -598,12 +598,10 @@ Usage examples:
             print("\nExecuting OWX entry insertion...")
             inserted = generate_owx_entries()
         
-        print("\n=== PROCESS COMPLETED ===")
+
         print("Generated files:")
         if NORMALIZED_CSV.exists():
             print(f"  - Normalized CSV: {NORMALIZED_CSV}")
-        if BAK_OWX.exists():
-            print(f"  - Backup copy: {BAK_OWX}")
         print(f"  - Updated OWX: {OWX}")
         
     except Exception as e:
