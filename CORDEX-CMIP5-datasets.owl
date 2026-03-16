@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-datasets.owl"
-     versionIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-datasets.owl">
+     versionIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-datasets/0.0/CORDEX-CMIP5-datasets.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/rub-n/ontologies/2025/10/CORDEX-CMIP5-datasets/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
