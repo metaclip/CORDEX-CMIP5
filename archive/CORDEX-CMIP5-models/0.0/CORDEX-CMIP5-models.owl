@@ -6,14 +6,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/CORDEX-CMIP5-models.owl"
-     versionIRI="https://raw.githubusercontent.com/metaclip/CORDEX-CMIP5/refs/heads/main/archive/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-models.owl">
+     versionIRI="https://metaclip.org/vocab/CORDEX-CMIP5/CORDEX-CMIP5-models/0.0/CORDEX-CMIP5-models.owl">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/master/archive/datasource/1.0.0/datasource.owl</Import>
+    <Import>https://metaclip.org/vocab/metaclip/datasource/1.0.0/datasource.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal>METACLIP.org &lt;https://github.com/metaclip&gt;</Literal>
